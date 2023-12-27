@@ -1,0 +1,17 @@
+{
+  "name": "@workspace/root",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "start": "lerna exec --scope  @workspace/project-one  -- yarn start",
+    "test": "lerna run test"
+  },
+  "devDependencies": {
+    "craco": "^0.0.3",
+    "lerna": "^8.0.1"
+  }
+}
